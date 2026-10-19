@@ -1,8 +1,9 @@
-import { listaCardapio } from "./funcoes.js";
-import { fazerPedido } from "./funcoes.js";
-import { historicoPedido } from "./funcoes.js";
+import { listaCardapio } from "./funcoes/mostrarCardapio.js";
+import { fazerPedido } from "./funcoes/FazerPedido.js";
+import { historicoPedido } from "./funcoes/verHistorico.js";
+import { CadastrarProduto } from "./funcoes/NovoProduto.js";
 
-console.log(" ---- Bem Vindo a lanchonete do betão ----");
+console.log(" ---- Bem Vindo a lanchonete do betinha ----");
 
 do {
   var option = Number(
@@ -11,7 +12,8 @@ do {
       "1 - Ver cardápio\n" +
       "2 - fazer pedido\n" +
       "3 - Pedidos\n" +
-      "4 - Sair",
+      "4 - Cadastrar produto\n" +
+      "5 - Sair",
     ),
   );
 
@@ -27,11 +29,15 @@ do {
       break;
 
     case 4:
-      console.log("Obrigado por visitar a lanchonete do Betão!");
+      CadastrarProduto();
+      break;
+
+    case 5:
+      console.log("Obrigado por visitar a lanchonete do Betinha!");
       break;
 
     default:
       console.log("Opção inválida!");
       break;
   }
-} while (option !== 4);
+} while (option !== 5);
