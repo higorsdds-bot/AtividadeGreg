@@ -1,6 +1,8 @@
 import { produtos } from "../dados/dados.js";
+
 export var historico = [];
 export var total = 0;
+
 export const fazerPedido = () => {
     var continuar = "sim";
 
