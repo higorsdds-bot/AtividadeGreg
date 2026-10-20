@@ -4,6 +4,7 @@ export const historicoPedido = () => {
     console.log(" ---- Histórico de pedidos ----");
     if (historico.length > 0) {
         for (let i = 0; i < historico.length; i++) {
+            console.log("Pedido " + (i + 1));
             console.log("Produto: " + historico[i].produto);
             console.log("Quantidade: " + historico[i].quantidade);
             console.log("Preço unitário: R$ " + historico[i].preco.toFixed(2));

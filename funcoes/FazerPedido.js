@@ -1,12 +1,13 @@
 import { produtos } from "../dados/dados.js";
 
 export var historico = [];
-export var total = 0;
+
 
 export const fazerPedido = () => {
+    var total = 0;
     var continuar = "sim";
 
-    while (continuar.toLowerCase() !== "não") {
+    while (continuar.toLowerCase() !== "não" && continuar.toLowerCase() !== "nao") {
         var pedido = prompt("Digite o nome do produto:");
         var quantidade = Number(prompt("Quantidade"));
 

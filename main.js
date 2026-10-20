@@ -1,6 +1,6 @@
 import { listaCardapio } from "./funcoes/mostrarCardapio.js";
 import { fazerPedido } from "./funcoes/FazerPedido.js";
-import { historicoPedido } from "./funcoes/verHistorico.js";
+import { historicoPedido } from "./funcoes/ListarPedidos.js";
 import { CadastrarProduto } from "./funcoes/NovoProduto.js";
 
 console.log(" ---- Bem Vindo a lanchonete do betinha ----");
